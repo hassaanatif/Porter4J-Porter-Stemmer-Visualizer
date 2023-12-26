@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="670.0" prefWidth="1020.0" style="-fx-background-color: #202020; -fx-background-radius: 8px; -fx-border-cplor: transparent; -fx-border-style: solid; -fx-border-width: 0px;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.porterstemmergui.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Pane fx:id="initialPage" prefHeight="670.0" prefWidth="1020.0" style="-fx-background-radius: 8px; -fx-border-width: 0px; -fx-border-color: transparent; -fx-border-style: solid;">
+         <children>
+            <Label fx:id="porter4j_lbl" layoutX="70.0" layoutY="14.0" text="Porter4J -  Porter Stemmer Visualizer " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="corpus_txtarea" layoutX="65.0" layoutY="158.0" prefHeight="389.0" prefWidth="840.0" promptText="Enter your corpus here" stylesheets="@textAreaStyling.css" />
+            <HBox layoutX="65.0" layoutY="110.0" prefHeight="40.0" prefWidth="509.0">
+               <children>
+                  <Label fx:id="enterCorpus_lbl" prefHeight="17.0" text="Enter your Corpus below  " textFill="WHITE" />
+                  <Label fx:id="or_lbl" prefHeight="17.0" prefWidth="27.0" text="OR" textFill="WHITE" />
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="importBtn" layoutY="-7.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="90.0" style="-fx-background-radius: 21.5px; -fx-background-color: linear-gradient(#2D2D2D, #333333); -fx-border-color: linear-gradient(#333333, #2D2D2D); -fx-border-radius: 21.5px;" text="Import" textFill="WHITE" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox layoutX="348.0" layoutY="560.0" prefHeight="56.0" prefWidth="211.0">
+               <children>
+                  <StackPane prefHeight="56.0" prefWidth="75.0" style="-fx-background-radius: 8px; -fx-border-radius: 8px;">
+                     <children>
+                        <ImageView fitHeight="56.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/Hippo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="porterizeBtn" layoutX="10.0" layoutY="15.0" text="Porterize me HARD!" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <Button fx:id="clearText_btn" layoutX="808.0" layoutY="100.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: linear-gradient(#2D2D2D, #333333); -fx-background-radius: 21.5px; -fx-border-radius: 21.5px; -fx-border-color: linear-gradient(#2D2D2D, #333333);" text="Clear Text" textFill="WHITE" />
+            <StackPane fx:id="closeIcon" layoutX="980.0" layoutY="10.0" prefHeight="14.0" prefWidth="14.0">
+               <children>
+                  <ImageView fitHeight="14.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/New%20folder/x-5.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+         </children>
+      </Pane>
+      <Pane prefHeight="670.0" prefWidth="1020.0" visible="false">
+         <children>
+            <Label layoutX="439.0" layoutY="14.0" text="Porter4J (RESULTS)">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+            <ListView layoutX="65.0" layoutY="118.0" prefHeight="389.0" prefWidth="840.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="tablePage" prefHeight="670.0" prefWidth="1020.0" style="-fx-background-color: #202020; -fx-background-radius: 8px; -fx-border-color: transparent; -fx-border-style: solid; -fx-border-width: 0px;" visible="false">
+         <children>
+            <ListView fx:id="wordsListView" layoutX="155.0" layoutY="100.0" prefHeight="513.0" prefWidth="693.0" />
+            <Label fx:id="backBtn" layoutX="67.0" layoutY="27.0" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="searchbox_txtfield" layoutX="154.0" layoutY="40.0" prefHeight="25.0" prefWidth="693.0" promptText="Search Word" />
+         </children>
+      </Pane>
+      <Pane fx:id="steps_view_pane" prefHeight="669.0" prefWidth="1019.0" style="-fx-background-color: rgba(0,0,0,0.6);" visible="false">
+         <children>
+            <Pane layoutX="110.0" layoutY="59.0" prefHeight="600.0" prefWidth="808.0" style="-fx-background-color: #2D2D2D; -fx-background-radius: 5px;">
+               <children>
+                  <ListView fx:id="stepsListView" layoutX="25.0" layoutY="50.0" prefHeight="500.0" prefWidth="756.0" />
+                  <Button fx:id="nextBtn" layoutX="573.0" layoutY="561.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: linear-gradient(#1AB25C, #42ED77); -fx-background-radius: 21.5;" text="Next" visible="false" />
+                  <StackPane fx:id="cross_icon" layoutX="717.0" layoutY="9.0" prefHeight="25.0" prefWidth="27.0">
+                     <children>
+                        <ImageView fitHeight="16.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/New%20folder/x-5.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </StackPane>
+               </children>
+            </Pane>
+         </children></Pane>
+   </children>
+</Pane>

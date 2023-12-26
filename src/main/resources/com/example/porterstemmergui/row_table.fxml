@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainAnchorPane" prefHeight="42.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane fx:id="labelPane" prefHeight="42.0" prefWidth="600.0" style="-fx-background-color: #333333; -fx-border-radius: 4px; -fx-background-radius: 4px;">
+         <children>
+            <HBox layoutX="13.0" layoutY="11.0" prefHeight="42.0" prefWidth="600.0">
+               <children>
+                  <Label fx:id="row_id" minWidth="59.0" prefHeight="17.0" prefWidth="115.0" text="1" textFill="WHITE" />
+                  <Label fx:id="row_word" layoutX="10.0" layoutY="10.0" minWidth="59.0" prefHeight="17.0" prefWidth="115.0" text="word" textFill="WHITE" />
+                  <Label fx:id="row_stem" layoutX="125.0" layoutY="10.0" minWidth="59.0" prefHeight="17.0" prefWidth="115.0" text="stem" textFill="WHITE" />
+                  <Label fx:id="row_steps" layoutX="240.0" layoutY="10.0" minWidth="59.0" prefHeight="17.0" prefWidth="115.0" text="steps" textFill="WHITE" />
+               </children></HBox>
+         </children></Pane>
+   </children>
+</AnchorPane>
