@@ -15,7 +15,7 @@ After Clicking the "Porterize me HARD!" label
 ![PorterImg03](https://github.com/hassaanatif/Porter4J-Porter-Stemmer-Visualizer/assets/67798561/145da462-3193-4683-90ae-b7735bbfd5ec)
 
 Clicking on a cell to view the steps to retrieve the stem 
-![PorterImg05](https://github.com/hassaanatif/Porter4J-Porter-Stemmer-Visualizer/assets/67798561/3c1846d8-c916-495d-90b1-4131373fcb27)
+![PorterImg04](https://github.com/hassaanatif/Porter4J-Porter-Stemmer-Visualizer/assets/67798561/cf6a361c-ded4-4120-bbbe-abe91de75242)
 
 Filtering the cells by either number of steps or name 
 ![PorterImg05](https://github.com/hassaanatif/Porter4J-Porter-Stemmer-Visualizer/assets/67798561/e138d1d6-5001-4447-b580-26ea09add6ad)
