@@ -1,4 +1,4 @@
-This visualizer utilizes the Porter Stemmer backend that I did as part of my other weekend project. For an framework as buggy as JavaFX, I wanted to provide something to the community 
+This visualizer utilizes the Porter Stemmer backend that I did as part of my other weekend project. For a framework as buggy as JavaFX, I wanted to provide something to the community 
 so that people would have an easier time working with JavaFX applications.
 NOTE : The source is yet to be refactored. And I will be incrementally working on refactoring this so that you guys would have an easier time reusing the code. 
 
